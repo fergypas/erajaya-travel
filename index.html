@@ -5,48 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Era Jaya Travel</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
   <!-- Header -->
-  <header class="flex items-center justify-between px-6 py-4 shadow-md">
-    <h1 class="text-xl font-bold">Era Jaya Travel</h1>
-    <nav class="space-x-4 text-sm font-medium">
-      <a href="#deals">Deals%</a>
-      <a href="#contact">Contact Us</a>
-      <a href="#partnerships">Partnerships</a>
-      <a href="#corporate">For Corporate</a>
-      <a href="#past-bookings">Past Bookings</a>
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold">Era Jaya Travel</h1>
+    <nav class="mt-2 md:mt-0 flex flex-wrap gap-4 text-sm font-medium text-gray-600">
+      <a href="#deals" class="hover:text-blue-600">Deals%</a>
+      <a href="#contact" class="hover:text-blue-600">Contact Us</a>
+      <a href="#partnerships" class="hover:text-blue-600">Partnerships</a>
+      <a href="#corporate" class="hover:text-blue-600">For Corporate</a>
+      <a href="#past-bookings" class="hover:text-blue-600">Past Bookings</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-cover bg-center h-[70vh] flex flex-col justify-center items-center text-white text-center px-4" style="background-image: url('https://source.unsplash.com/1600x900/?travel,car');">
-    <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Travel with Comfort and Confidence</h2>
-    <p class="text-lg md:text-xl mb-6">Trusted transportation for every journey</p>
-    <a href="#segments" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold">Book Now</a>
+  <!-- Hero -->
+  <section class="relative h-[75vh] bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4"
+    style="background-image: url('https://source.unsplash.com/1600x900/?travel,car');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-xl">
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Travel with Comfort and Confidence</h2>
+      <p class="text-lg md:text-xl mb-6">Trusted rides, reliable service, professional team</p>
+      <a href="#segments" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold">Book Now</a>
+    </div>
   </section>
 
-  <!-- Segment Options -->
-  <section id="segments" class="py-12 px-6 max-w-5xl mx-auto">
-    <h3 class="text-2xl font-bold mb-6 text-center">Choose Your Service</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <button class="bg-gray-100 p-6 rounded-2xl shadow hover:bg-blue-100 transition">🚗 Car Rental</button>
-      <button class="bg-gray-100 p-6 rounded-2xl shadow hover:bg-blue-100 transition">🚌 Bus & Travel</button>
-      <button class="bg-gray-100 p-6 rounded-2xl shadow hover:bg-blue-100 transition">✈️ Airport Transfers</button>
+  <!-- Services -->
+  <section id="segments" class="py-12 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10">Choose Your Service</h3>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="p-6 bg-gray-100 rounded-2xl shadow hover:shadow-xl hover:bg-blue-50 transition text-center">
+        <span class="text-4xl">🚗</span>
+        <h4 class="mt-4 font-bold text-lg">Car Rental</h4>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-2xl shadow hover:shadow-xl hover:bg-blue-50 transition text-center">
+        <span class="text-4xl">🚌</span>
+        <h4 class="mt-4 font-bold text-lg">Bus & Travel</h4>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-2xl shadow hover:shadow-xl hover:bg-blue-50 transition text-center">
+        <span class="text-4xl">✈️</span>
+        <h4 class="mt-4 font-bold text-lg">Airport Transfers</h4>
+      </div>
     </div>
   </section>
 
   <!-- Why Choose Us -->
   <section class="bg-gray-50 py-12 px-6">
     <div class="max-w-4xl mx-auto">
-      <h3 class="text-2xl font-bold mb-6 text-center">Why Choose Era Jaya?</h3>
-      <div class="grid md:grid-cols-2 gap-6 text-center">
+      <h3 class="text-3xl font-bold text-center mb-8">Why Choose Era Jaya?</h3>
+      <div class="grid gap-6 md:grid-cols-2 text-center text-lg">
         <div>✔️ Professional Drivers</div>
         <div>✔️ Clean, Maintained Vehicles</div>
         <div>✔️ Fast WhatsApp Support</div>
@@ -56,21 +71,21 @@
   </section>
 
   <!-- Blog Suggestions -->
-  <section class="py-12 px-6 max-w-5xl mx-auto">
-    <h3 class="text-2xl font-bold mb-6 text-center">Travel Inspiration</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl shadow p-4">
-        <img src="https://source.unsplash.com/400x300/?sumatra" alt="Sumatra" class="rounded-lg mb-3">
+  <section class="py-12 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-8 text-center">Travel Inspiration</h3>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+        <img src="https://source.unsplash.com/400x300/?sumatra" class="w-full rounded-lg mb-3" alt="Sumatra" />
         <h4 class="font-bold text-lg">Explore North Sumatra</h4>
         <p class="text-sm text-gray-600">Discover hidden gems perfect for your weekend getaway.</p>
       </div>
-      <div class="bg-white rounded-xl shadow p-4">
-        <img src="https://source.unsplash.com/400x300/?family,trip" alt="Family Trip" class="rounded-lg mb-3">
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+        <img src="https://source.unsplash.com/400x300/?family,trip" class="w-full rounded-lg mb-3" alt="Family Trip" />
         <h4 class="font-bold text-lg">Family Travel Tips</h4>
         <p class="text-sm text-gray-600">Travel comfortably and safely with kids.</p>
       </div>
-      <div class="bg-white rounded-xl shadow p-4">
-        <img src="https://source.unsplash.com/400x300/?beach,travel" alt="Beach Trip" class="rounded-lg mb-3">
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+        <img src="https://source.unsplash.com/400x300/?beach,travel" class="w-full rounded-lg mb-3" alt="Beach Trip" />
         <h4 class="font-bold text-lg">Beach Getaways</h4>
         <p class="text-sm text-gray-600">Plan your next tropical escape with us.</p>
       </div>
@@ -78,14 +93,14 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-10 px-6">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-4 gap-6">
+  <footer class="bg-gray-900 text-white py-10 px-6 mt-12">
+    <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-4">
       <div>
         <h4 class="font-bold mb-2">Company</h4>
         <ul class="text-sm space-y-1">
-          <li>About Us</li>
-          <li>How to Book</li>
-          <li>Contact Us</li>
+          <li><a href="#about" class="hover:text-blue-300">About Us</a></li>
+          <li><a href="#howtobook" class="hover:text-blue-300">How to Book</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact Us</a></li>
         </ul>
       </div>
       <div>
@@ -105,10 +120,11 @@
           <li>WhatsApp</li>
         </ul>
       </div>
-      <div class="text-sm">
-        &copy; 2025 Era Jaya Travel. All rights reserved.
+      <div class="text-sm text-gray-400">
+        &copy; 2025 Era Jaya Travel<br />All rights reserved.
       </div>
     </div>
   </footer>
+
 </body>
 </html>
